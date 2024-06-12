@@ -13,5 +13,6 @@
     "app/api/cron/**/*.ts": {
       "maxDuration": 300
     }
-  }
+  },
+  "regions": ["bom1"]
 }
