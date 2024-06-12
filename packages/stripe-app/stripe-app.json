@@ -1,0 +1,52 @@
+{
+  "id": "zlicx.com",
+  "version": "0.0.1",
+  "name": "Zlicx",
+  "icon": "./logo.png",
+  "permissions": [
+    {
+      "permission": "customer_read",
+      "purpose": "Allows Zlicx to read customer information."
+    },
+    {
+      "permission": "subscription_read",
+      "purpose": "Allows Zlicx to read subscription information."
+    },
+    {
+      "permission": "invoice_read",
+      "purpose": "Allows Zlicx to read invoice information."
+    },
+    {
+      "permission": "checkout_session_read",
+      "purpose": "Allows Zlicx to read checkout session information."
+    },
+    {
+      "permission": "user_email_read",
+      "purpose": "Access current user's email address to identify within Zlicx."
+    },
+    {
+      "permission": "connected_account_read",
+      "purpose": "Allows reading basic data from connected accounts, such as account name and id."
+    },
+    {
+      "permission": "webhook_read",
+      "purpose": "Allows Zlicx to read webhook information."
+    },
+    {
+      "permission": "event_read",
+      "purpose": "Allows Zlicx to read event information."
+    }
+  ],
+  "ui_extension": {
+    "content_security_policy": {
+      "connect-src": null,
+      "image-src": null,
+      "purpose": ""
+    }
+  },
+  "allowed_redirect_uris": [
+    "https://app.zlicx.com/api/stripe/connect/callback"
+  ],
+  "stripe_api_access_type": "oauth",
+  "distribution_type": "public"
+}

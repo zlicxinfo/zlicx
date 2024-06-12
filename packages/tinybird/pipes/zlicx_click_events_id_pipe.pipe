@@ -1,0 +1,9 @@
+NODE mv
+SQL >
+
+    SELECT * FROM zlicx_click_events
+
+TYPE materialized
+DATASOURCE zlicx_click_events_id
+
+
