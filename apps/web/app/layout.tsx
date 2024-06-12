@@ -1,6 +1,6 @@
 import { inter, satoshi } from "@/styles/fonts";
 import "@/styles/globals.css";
-import { Analytics as ZlicxAnalytics } from "@zlicx/analytics/react";
+// import { Analytics as ZlicxAnalytics } from "@zlicx/analytics/react";
 import { TooltipProvider } from "@zlicx/ui/src/tooltip";
 import { cn, constructMetadata } from "@zlicx/utils";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
@@ -20,13 +20,13 @@ export default function RootLayout({
         <TooltipProvider>
           <Toaster closeButton className="pointer-events-auto" />
           {children}
-          <ZlicxAnalytics
+          {/* <ZlicxAnalytics
             cookieOptions={{
               domain: process.env.NEXT_PUBLIC_VERCEL_ENV
                 ? `.${process.env.NEXT_PUBLIC_APP_DOMAIN}`
                 : undefined,
             }}
-          />
+          /> */}
           <VercelAnalytics />
           <SpeedInsights />
         </TooltipProvider>

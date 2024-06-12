@@ -137,9 +137,9 @@ importers:
       '@visx/tooltip':
         specifier: ^2.16.0
         version: 2.16.0(react-dom@18.2.0)(react@18.2.0)
-      '@zlicx/analytics':
-        specifier: ^0.0.11
-        version: /@zlicx/analytics@0.0.11
+      # '@zlicx/analytics':
+      #   specifier: ^0.0.11
+      #   version: /@zlicx/analytics@0.0.11
       '@zlicx/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -8885,11 +8885,11 @@ packages:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
     dev: false
 
-  /@zlicx/analytics@0.0.11:
-    resolution: {integrity: sha512-Cn4DfDUqYW50tiVKsVJHVf+lNCImY5qcKD7L033Ar1er1al7gL38pf4PE//axN424Hr1T0Yyh0cADdb7sRZ7Qg==, tarball: https://registry.npmjs.org/@zlicx/analytics/-/analytics-0.0.11.tgz}
-    dependencies:
-      server-only: 0.0.1
-    dev: false
+  # /@zlicx/analytics@0.0.11:
+  #   resolution: {integrity: sha512-Cn4DfDUqYW50tiVKsVJHVf+lNCImY5qcKD7L033Ar1er1al7gL38pf4PE//axN424Hr1T0Yyh0cADdb7sRZ7Qg==, tarball: https://registry.npmjs.org/@zlicx/analytics/-/analytics-0.0.11.tgz}
+  #   dependencies:
+  #     server-only: 0.0.1
+  #   dev: false
 
   /abab@2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
