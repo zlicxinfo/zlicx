@@ -2,7 +2,7 @@
 
 Zlicx is an link management tool for modern marketing teams to create, share, and track short links.
 
-## Local Development
+## Local Development 
 
 To develop Zlicx locally, you will need to modify this repository and set up all the env vars outlined in the [`.env.example` file]
 Once that's done, you can use the following commands to run the app locally:
