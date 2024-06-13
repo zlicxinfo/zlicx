@@ -54,6 +54,10 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
     return NextResponse.redirect(DEFAULT_REDIRECTS[key]);
   }
 
+  if (domain == "zli.cx" && key.length === 0) {
+    return NextResponse.redirect("https://zlicx.com");
+  }
+
   // for Admin
   if (ADMIN_HOSTNAMES.has(domain)) {
     return AdminMiddleware(req);
