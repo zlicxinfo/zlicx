@@ -1,14 +1,12 @@
 "use client";
 
-import { ALL_TOOLS, COMPARE_PAGES, cn, fetcher } from "@zlicx/utils";
 import va from "@vercel/analytics";
-import Image from "next/image";
+import { ALL_TOOLS, COMPARE_PAGES, cn, fetcher } from "@zlicx/utils";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
 import { FEATURES_LIST } from "./content";
-import { Github, LinkedIn, Twitter, YouTube } from "./icons";
 import { MaxWidthWrapper } from "./max-width-wrapper";
 import { NavLogo } from "./nav-logo";
 
@@ -49,7 +47,7 @@ export function Footer() {
 
   return (
     <footer>
-      <MaxWidthWrapper className="relative z-10 overflow-hidden border border-b-0 border-gray-200 bg-white/50 pb-60 pt-16 backdrop-blur-lg md:rounded-t-2xl">
+      <MaxWidthWrapper className="relative z-10 overflow-hidden border border-b-0 border-gray-200 bg-white/50 pb-1 pt-2 backdrop-blur-lg md:rounded-t-2xl">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-6">
             <Link
@@ -67,7 +65,11 @@ export function Footer() {
               <span className="sr-only">
                 {process.env.NEXT_PUBLIC_APP_NAME} Logo
               </span>
-              <NavLogo className="h-8 text-gray-800" />
+              <NavLogo
+                className="h-16 w-16 text-gray-800"
+                variant="symbol"
+                isInApp
+              />
             </Link>
             <p className="max-w-xs text-sm text-gray-500">
               Giving modern marketing teams superpowers with short links that
@@ -76,7 +78,7 @@ export function Footer() {
             <p className="text-sm leading-5 text-gray-400">
               © {new Date().getFullYear()} Zlicx Software Services Pvt Ltd.
             </p>
-            <div className="flex items-center space-x-3">
+            {/* <div className="flex items-center space-x-3">
               <a
                 href="https://twitter.com/zlicx"
                 target="_blank"
@@ -104,11 +106,10 @@ export function Footer() {
                 <span className="sr-only">LinkedIn</span>
                 <LinkedIn className="h-4 w-4 text-gray-600 transition-colors group-hover:text-[#0077b5]" />
               </a>
-    
-            </div>
-            <StatusBadge />
+            </div> */}
+            {/* <StatusBadge /> */}
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-4 xl:col-span-2 xl:mt-0">
+          {/* <div className="mt-16 grid grid-cols-2 gap-4 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2">
               <div>
                 <h3 className="text-sm font-semibold text-gray-800">
@@ -235,15 +236,15 @@ export function Footer() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-        <Image
+        {/* <Image
           src="https://assets.zlicx.com/footer.png"
           alt="Zlicx Software Services Pvt Ltd. Logo"
           width={1959}
           height={625}
           className="pointer-events-none absolute inset-x-0 bottom-0 z-0"
-        />
+        /> */}
       </MaxWidthWrapper>
     </footer>
   );

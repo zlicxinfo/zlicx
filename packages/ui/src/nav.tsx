@@ -1,14 +1,16 @@
 "use client";
 
-import { APP_DOMAIN, HIDE_BACKGROUND_SEGMENTS, cn, fetcher } from "@zlicx/utils";
-import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import va from "@vercel/analytics";
-import { ChevronDown } from "lucide-react";
+import {
+  APP_DOMAIN,
+  HIDE_BACKGROUND_SEGMENTS,
+  cn,
+  fetcher,
+} from "@zlicx/utils";
 import Link from "next/link";
 import { useParams, useSelectedLayoutSegment } from "next/navigation";
 import { createContext } from "react";
 import useSWR from "swr";
-import { FEATURES_LIST } from "./content";
 import { useScroll } from "./hooks";
 import { MaxWidthWrapper } from "./max-width-wrapper";
 import { NavLogo } from "./nav-logo";
@@ -91,9 +93,11 @@ export function Nav({ theme = "light" }: { theme?: NavTheme }) {
                   },
                 })}
               >
-                <NavLogo />
+                {/* <NavLogo /> */}
+                {/* <LogoType /> */}
+                <NavLogo className="h-22 w-22" variant="symbol" isInApp />
               </Link>
-              <NavigationMenuPrimitive.Root
+              {/* <NavigationMenuPrimitive.Root
                 delayDuration={0}
                 className="relative hidden lg:block"
               >
@@ -176,7 +180,7 @@ export function Nav({ theme = "light" }: { theme?: NavTheme }) {
                 </NavigationMenuPrimitive.List>
 
                 <NavigationMenuPrimitive.Viewport className="data-[state=closed]:animate-scale-out-content data-[state=open]:animate-scale-in-content absolute left-0 top-full flex w-[var(--radix-navigation-menu-viewport-width)] origin-[top_center] justify-start rounded-lg border border-gray-200 bg-white shadow-lg dark:border-white/[0.15] dark:bg-black" />
-              </NavigationMenuPrimitive.Root>
+              </NavigationMenuPrimitive.Root> */}
             </div>
 
             <div className="hidden lg:block">

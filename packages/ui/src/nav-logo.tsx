@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@zlicx/utils";
 import * as Popover from "@radix-ui/react-popover";
+import { cn } from "@zlicx/utils";
 import { BoxSelect, Home, LayoutGrid, Type } from "lucide-react";
 import { useParams } from "next/navigation";
 import { MouseEvent, useCallback, useContext, useState } from "react";
@@ -63,7 +63,7 @@ export function NavLogo({
           ) : (
             <Logo
               className={cn(
-                "h-8 w-8 transition-all duration-75 active:scale-95",
+                "h-22 w-22 transition-all duration-75 active:scale-95",
                 className,
               )}
             />
@@ -83,7 +83,7 @@ export function NavLogo({
             setIsPopoverOpen(false);
           }}
         >
-          <div className="grid gap-1 rounded-lg border border-gray-200 bg-white p-2 drop-shadow-sm dark:border-white/[0.15] dark:bg-black sm:min-w-[240px]">
+          <div className="grid gap-1 rounded-lg border border-gray-200 bg-white p-2 drop-shadow-sm sm:min-w-[240px] dark:border-white/[0.15] dark:bg-black">
             <ContextMenuButton
               text="Copy Logo as SVG"
               variant="outline"
